@@ -19,7 +19,7 @@ import javac1.Personne;
 public class Main {
     public static void main(String[] a){
         List<Personne> c = new ArrayList<Personne>();
-        String s = "Amalvy Theo 170;Cabrer Alois 181;Clerc Thomas 170;Artosimus Machis 60";
+        String s = "Adevy Theo 170;Cabsertrezr Alois 181;Cdferyiorc Thomas 170;Artosimus Machis 60";
         
         String[] t = s.split(";");
         for(int i = 0; i< t.length;i++){

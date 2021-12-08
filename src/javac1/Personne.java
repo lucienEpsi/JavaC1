@@ -9,7 +9,7 @@ package javac1;
  *
  * @author 33676
  */
-public class Personne {
+public class Personne implements Comparable<Personne>{
     private String nom;
     private String prenom;
     private int taille;
@@ -43,6 +43,18 @@ public class Personne {
     public String toString() {
         return "Personne{" + "nom=" + nom.toUpperCase() + ", prenom=" + prenom + ", taille=" + taille + '}';
     }
+
+    
+    @Override
+    public int compareTo(Personne o) {
+        return this.nom.compareTo(o.getNom());
+    }
+   
+/*    @Override
+    public int compareTo(Personne o) {
+        return (this.taille - o.getTaille());
+    }
+*/
     
     
 }
