@@ -5,6 +5,9 @@
  */
 package calcul;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author 33676
@@ -17,6 +20,15 @@ public class Main {
         System.out.println(c.addition(a, b));
         System.out.println(c.soustraction(a, b));
         System.out.println(c.multiplication(a, b));
-        System.out.println(c.division(a, b));
+        try {
+            System.out.println(c.division(10, 0));
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        try {
+            System.out.println(c.division(0, 10));
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 }
