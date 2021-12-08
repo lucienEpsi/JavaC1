@@ -81,5 +81,13 @@ public class Main {
         c.forEach(p -> {
             System.out.println(p);
         });
+        
+        System.out.println("Trie par prenom ");
+        //ecriture lambda expression
+        Collections.sort(c, 
+                (Personne o1, Personne o2) -> (o1.getPrenom().compareTo(o2.getPrenom())));
+        c.forEach(p -> {
+            System.out.println(p);
+        });
     }
 }
