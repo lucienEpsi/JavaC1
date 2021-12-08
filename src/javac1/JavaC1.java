@@ -12,7 +12,7 @@ package javac1;
 public class JavaC1 {
 
     public static void main(String[] args) {
-        String s = "Amalvy Theo 170;Cabrer Alois 181;Clerc Thomas 170";
+        String s = "Amoioioiy Theo 170;Cabotfertsr Alois 181;Ceisterc Thomas 170";
         String[] tP = s.split(";");
         Personne[] personnes = new Personne[tP.length];
         try{
@@ -54,7 +54,7 @@ public class JavaC1 {
     public static void main1(String[] args) {
         String divers = "Aujourd'hui j'ai des apprenants reseaux interressants";
 
-        System.out.println("Hello, les spécialistes RESEAUXXXXX!");
+        System.out.println("Hello, les spÃ©cialistes RESEAUXXXXX!");
         String nom = "Martos";
         String prenom = "Lucien";
         System.out.println(nom + " " + prenom);
