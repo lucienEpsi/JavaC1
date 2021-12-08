@@ -27,7 +27,7 @@ public class Calculatrice {
         return a * b;
     }
 
-    public int division(int a, int b)throws Exception {
+    public int division(int a, int b)throws MonException {
         //ce test boolean est a proscrire puisqu'il ne 
         //reflete pas la réalité
         /*
@@ -45,7 +45,9 @@ public class Calculatrice {
         }
         return resultat;
 */
-        
+        if(b==0){
+            throw new MonException();
+        }
         return a / b;
     }
 
