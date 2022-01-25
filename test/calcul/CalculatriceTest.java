@@ -164,5 +164,53 @@ public class CalculatriceTest {
         assertEquals(expResult, result, 0.0);
         
     }
+
+    /**
+     * Test of addition method, of class Calculatrice.
+     */
+    @Test
+    public void testAddition_int_int() {
+        System.out.println("addition");
+        int a = 0;
+        int b = 0;
+        Calculatrice instance = new Calculatrice();
+        int expResult = 0;
+        int result = instance.addition(a, b);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of division method, of class Calculatrice.
+     */
+    @Test
+    public void testDivision_int_int() throws Exception {
+        System.out.println("division");
+        int a = 0;
+        int b = 0;
+        Calculatrice instance = new Calculatrice();
+        int expResult = 0;
+        int result = instance.division(a, b);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of division method, of class Calculatrice.
+     */
+    @Test
+    public void testDivision_double_double() {
+        System.out.println("division");
+        double a = 0.0;
+        double b = 0.0;
+        Calculatrice instance = new Calculatrice();
+        double expResult = 0.0;
+        double result = instance.division(a, b);
+        assertEquals(expResult, result, 0.0);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
     
 }
